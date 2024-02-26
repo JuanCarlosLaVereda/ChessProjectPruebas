@@ -1,4 +1,7 @@
-package es.ieslavereda;
+package es.ieslavereda.pruebas;
+
+import java.util.Set;
+import java.util.TreeSet;
 
 public class Knight extends Piece {
 
@@ -6,40 +9,40 @@ public class Knight extends Piece {
         super(type.getType(), board.getCellAt(position));
     }
 
-    public Coordinate[] getNextMovements() {
+    public Set<Coordinate> getNextMovements() {
 
-        Coordinate[] nextMovements = new Coordinate[0];
+        Set<Coordinate> nextMovements = new TreeSet<>();
 
         Coordinate myPosition = getCell().getCoordinate();
         Coordinate c;
 
         //Up
         c = myPosition.up().up().left();
-        if(canAddToNextMovements(c)) nextMovements = Tool.add(c,nextMovements);
+        if(canAddToNextMovements(c)) nextMovements.add(c);
 
         c = myPosition.up().up().right();
-        if(canAddToNextMovements(c)) nextMovements = Tool.add(c,nextMovements);
+        if(canAddToNextMovements(c)) nextMovements.add(c);
 
         //Down
         c = myPosition.down().down().left();
-        if(canAddToNextMovements(c)) nextMovements = Tool.add(c,nextMovements);
+        if(canAddToNextMovements(c)) nextMovements.add(c);
 
         c = myPosition.down().down().right();
-        if(canAddToNextMovements(c)) nextMovements = Tool.add(c,nextMovements);
+        if(canAddToNextMovements(c)) nextMovements.add(c);
 
         //Left
         c = myPosition.left().left().up();
-        if(canAddToNextMovements(c)) nextMovements = Tool.add(c,nextMovements);
+        if(canAddToNextMovements(c)) nextMovements.add(c);
 
         c = myPosition.left().left().down();
-        if(canAddToNextMovements(c)) nextMovements = Tool.add(c,nextMovements);
+        if(canAddToNextMovements(c)) nextMovements.add(c);
 
         //Right
         c = myPosition.right().right().up();
-        if(canAddToNextMovements(c)) nextMovements = Tool.add(c,nextMovements);
+        if(canAddToNextMovements(c)) nextMovements.add(c);
 
         c = myPosition.right().right().down();
-        if(canAddToNextMovements(c)) nextMovements = Tool.add(c,nextMovements);
+        if(canAddToNextMovements(c)) nextMovements.add(c);
 
 
         return nextMovements;

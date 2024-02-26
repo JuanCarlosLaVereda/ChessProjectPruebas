@@ -1,6 +1,9 @@
-package es.ieslavereda;
+package es.ieslavereda.pruebas;
 
 import com.diogonunes.jcolor.Attribute;
+
+import java.util.Iterator;
+import java.util.Set;
 
 import static com.diogonunes.jcolor.Ansi.colorize;
 
@@ -8,15 +11,14 @@ public abstract class Piece {
 
     private Type type;
     private Cell cell;
-
-    public Piece(Type type, Cell cell) {
+    public Piece(Type type, Cell cell){
         this.type = type;
         this.cell = cell;
         place();
     }
 
     protected void place() {
-        if (cell != null)
+        if(cell!=null)
             cell.setPiece(this);
     }
 
@@ -33,6 +35,43 @@ public abstract class Piece {
         return false;
     }
 
+    public boolean canMoveTo(Coordinate coordinate){
+        boolean encontrado=false;
+        Set<Coordinate> nextMovements = getNextMovements();
+        int i=0;
+        Iterator<Coordinate> iterator = nextMovements.iterator();
+
+        while (!encontrado && iterator.hasNext()){
+            if(iterator.next().equals(coordinate))
+                encontrado=true;
+        }
+
+        return encontrado;
+    }
+
+    public void remove(){
+        if(cell!=null)
+            cell.setPiece(null);
+        cell = null;
+    }
+
+    public boolean moveTo(Coordinate coordinate){
+        if(cell == null) return false;
+        if(!canMoveTo(coordinate)) return false;
+
+        Cell destination = cell.getBoard().getCellAt(coordinate);
+
+        if(!destination.isEmpty())
+            destination.getPiece().remove();
+
+        cell.setPiece(null);
+        cell = destination;
+
+        place();
+
+        return true;
+    }
+
     public void setCell(Cell cell) {
         this.cell = cell;
     }
@@ -45,23 +84,24 @@ public abstract class Piece {
         return cell;
     }
 
-    public Color getColor() {
+    public Color getColor(){
         return type.getColor();
     }
 
-    public abstract Coordinate[] getNextMovements();
 
     @Override
-    public String toString() {
+    public String toString(){
         String resultado;
 
-        if (cell == null) {
-            resultado = colorize(type.getShape(), type.getColor().getAttribute());
-        } else {
-            resultado = colorize(type.getShape(), type.getColor().getAttribute(), cell.getColor().getAttribute());
+        if(cell==null){
+            resultado = colorize(type.getShape(),type.getColor().getAttribute());
+        }else{
+            resultado = colorize(type.getShape(),type.getColor().getAttribute(),cell.getColor().getAttribute());
         }
         return resultado;
     }
+
+    public abstract Set<Coordinate> getNextMovements();
 
     public enum Color {
 
@@ -106,8 +146,7 @@ public abstract class Piece {
         public String getShape() {
             return shape;
         }
-
-        public Color getColor() {
+        public Color getColor(){
             return color;
         }
     }

@@ -1,9 +1,8 @@
-package es.ieslavereda;
+package es.ieslavereda.pruebas;
 
-public class Coordinate {
-
-    private char letter;
-    private int number;
+public class Coordinate implements Comparable<Coordinate>{
+    private Character letter;
+    private Integer number;
 
     public Coordinate(char letter, int number) {
         this.letter = Character.toUpperCase(letter);
@@ -35,13 +34,23 @@ public class Coordinate {
     }
 
     @Override
+    public int hashCode(){
+        return letter+number;
+    }
+
+    @Override
+    public int compareTo(Coordinate coordinate){
+        if (this.getNumber()-coordinate.getNumber()==0){
+            return this.getLetter()-coordinate.getLetter();
+        }
+        return this.getNumber()-coordinate.getNumber();
+    }
+
+    @Override
     public boolean equals(Object obj) {
-        if(obj==null) return false;
-
-        if(! (obj instanceof Coordinate)) return false;
-
-        Coordinate c = (Coordinate) obj;
-        return c.letter==this.letter && c.number==this.number;
+        if(obj==null)
+            return false;
+        return (obj instanceof Coordinate)?((Coordinate) obj).letter==letter && ((Coordinate) obj).number==number:false;
     }
 
     @Override

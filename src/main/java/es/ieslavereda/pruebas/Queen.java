@@ -1,4 +1,7 @@
-package es.ieslavereda;
+package es.ieslavereda.pruebas;
+
+import java.util.Set;
+import java.util.TreeSet;
 
 public class Queen extends Piece{
     public Queen(Board board, Coordinate position, Type type) {
@@ -6,14 +9,14 @@ public class Queen extends Piece{
     }
 
     //put your task here
-    public Coordinate[] getNextMovements(){
-        Coordinate[] nextMovements = new Coordinate[0];
+    public Set<Coordinate> getNextMovements(){
+        Set<Coordinate> nextMovements = new TreeSet<>();
 
         for (Coordinate c : Bishop.getNextMovementsAsBishop(this))
-            nextMovements=Tool.add(c,nextMovements);
+            nextMovements.add(c);
 
         for (Coordinate c : Rook.getNextMovementsAsRook(this))
-            nextMovements=Tool.add(c,nextMovements);
+            nextMovements.add(c);
 
         return nextMovements;
     }

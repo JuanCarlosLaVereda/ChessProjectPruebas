@@ -1,4 +1,4 @@
-package es.ieslavereda;
+package es.ieslavereda.pruebas;
 
 import com.diogonunes.jcolor.Attribute;
 
@@ -49,6 +49,10 @@ public class Cell {
             this.color = (piece!=null)? Color.HIGHLIGHT_KILL_BLACK : Color.HIGHLIGHT_BLACK;
     }
 
+    public void removeHighLight(){
+        this.color = originalColor;
+    }
+
     @Override
     public String toString(){
         if(piece==null){
@@ -64,10 +68,6 @@ public class Cell {
 
     public boolean isEmpty() {
         return piece==null;
-    }
-
-    public void removeHighLight() {
-        color = originalColor;
     }
 
     public enum Color {

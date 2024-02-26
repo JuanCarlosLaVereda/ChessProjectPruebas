@@ -1,17 +1,22 @@
-package es.ieslavereda;
+package es.ieslavereda.pruebas;
 
-public class Bishop extends Piece {
-    public Bishop(Board board, Coordinate position, Type type) {
+import java.util.Set;
+import java.util.TreeSet;
+
+public class Rook extends Piece {
+    public Rook(Board board, Coordinate position, Type type) {
         super(type.getType(), board.getCellAt(position));
     }
 
-    public Coordinate[] getNextMovements(){
-        return getNextMovementsAsBishop(this);
+    //put your task here
+    public Set<Coordinate> getNextMovements(){
+        return getNextMovementsAsRook(this);
     }
 
-    public static Coordinate[] getNextMovementsAsBishop(Piece piece) {
+    //put your task here
+    public static Set<Coordinate> getNextMovementsAsRook(Piece piece) {
 
-        Coordinate[] nextMovements = new Coordinate[0];
+        Set<Coordinate> nextMovements = new TreeSet<>();
         Coordinate posicion = piece.getCell().getCoordinate();
         Coordinate c;
         Board board = piece.getCell().getBoard();
@@ -20,45 +25,43 @@ public class Bishop extends Piece {
         if (posicion == null)
             return nextMovements;
 
-        // Diagonal superior izq
+        // Diagonal superior
         c = posicion;
         do {
-            c = c.up().left();
+            c = c.up();
             if (piece.canAddToNextMovements(c))
-                nextMovements = Tool.add(c, nextMovements);
-
+                nextMovements.add(c);
         } while (board.contains(c) && board.getCellAt(c).getPiece() == null);
 
-        // Diagonal superior der
+        // Diagonal  der
         c = posicion;
         do {
-            c = c.up().right();
+            c = c.right();
             if (piece.canAddToNextMovements(c))
-                nextMovements = Tool.add(c, nextMovements);
+                nextMovements.add(c);
         } while (board.contains(c) && board.getCellAt(c).getPiece() == null);
 
-        // Diagonal inferior izq
+        // Diagonal  izq
         c = posicion;
         do {
-            c = c.down().left();
+            c = c.left();
             if (piece.canAddToNextMovements(c))
-                nextMovements = Tool.add(c, nextMovements);
+                nextMovements.add(c);
         } while (board.contains(c) && board.getCellAt(c).getPiece() == null);
 
-        // Diagonal inferior der
+        // Diagonal inferior
         c = posicion;
         do {
-            c = c.down().right();
+            c = c.down();
             if (piece.canAddToNextMovements(c))
-                nextMovements = Tool.add(c, nextMovements);
+                nextMovements.add(c);
         } while (board.contains(c) && board.getCellAt(c).getPiece() == null);
 
         return nextMovements;
     }
 
-
     public enum Type {
-        BLACK(Piece.Type.BLACK_BISHOP), WHITE(Piece.Type.WHITE_BISHOP);
+        BLACK(Piece.Type.BLACK_ROOK), WHITE(Piece.Type.WHITE_ROOK);
         private Piece.Type type;
 
         Type(Piece.Type type) {

@@ -1,4 +1,4 @@
-package es.ieslavereda;
+package es.ieslavereda.pruebas;
 
 import java.util.Arrays;
 
