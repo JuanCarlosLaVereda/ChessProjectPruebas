@@ -8,6 +8,9 @@ public class Knight extends Piece {
     public Knight(Board board, Coordinate position, Type type) {
         super(type.getType(), board.getCellAt(position));
     }
+    public Knight(Knight.Type type){
+        super(type.getType(), null);
+    }
 
     public Set<Coordinate> getNextMovements() {
 

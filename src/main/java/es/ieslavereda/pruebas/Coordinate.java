@@ -10,19 +10,19 @@ public class Coordinate implements Comparable<Coordinate>{
     }
 
     public Coordinate up() {
-        return new Coordinate(letter, number - 1);
-    }
-
-    public Coordinate down() {
         return new Coordinate(letter, number + 1);
     }
 
+    public Coordinate down() {
+        return new Coordinate(letter, number - 1);
+    }
+
     public Coordinate left() {
-        return new Coordinate((char) (letter - 1), number);
+        return new Coordinate((char) (letter + 1), number);
     }
 
     public Coordinate right() {
-        return new Coordinate((char) (letter + 1), number);
+        return new Coordinate((char) (letter - 1), number);
     }
 
     public char getLetter() {
@@ -41,9 +41,9 @@ public class Coordinate implements Comparable<Coordinate>{
     @Override
     public int compareTo(Coordinate coordinate){
         if (this.getNumber()-coordinate.getNumber()==0){
-            return this.getLetter()-coordinate.getLetter();
+            return coordinate.getLetter()-this.getLetter();
         }
-        return this.getNumber()-coordinate.getNumber();
+        return coordinate.getNumber()-this.getNumber();
     }
 
     @Override

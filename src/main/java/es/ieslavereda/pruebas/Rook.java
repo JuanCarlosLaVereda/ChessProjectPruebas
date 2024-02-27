@@ -7,6 +7,9 @@ public class Rook extends Piece {
     public Rook(Board board, Coordinate position, Type type) {
         super(type.getType(), board.getCellAt(position));
     }
+    public Rook(Rook.Type type){
+        super(type.getType(), null);
+    }
 
     //put your task here
     public Set<Coordinate> getNextMovements(){

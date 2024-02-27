@@ -4,24 +4,20 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="961f9787-bbe9-431f-8dd8-86a74f7abe99" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/es/ieslavereda/pruebas/DeletedPieceManagerListImp.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/es/ieslavereda/pruebas/IDeletedPieceManager.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/es/ieslavereda/pruebas/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="961f9787-bbe9-431f-8dd8-86a74f7abe99" name="Changes" comment="v.1">
+      <change afterPath="$PROJECT_DIR$/src/main/java/es/ieslavereda/pruebas/Screen.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/es/ieslavereda/Bishop.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/es/ieslavereda/pruebas/Bishop.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/es/ieslavereda/Board.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/es/ieslavereda/pruebas/Board.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/es/ieslavereda/Cell.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/es/ieslavereda/pruebas/Cell.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/es/ieslavereda/Coordinate.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/es/ieslavereda/pruebas/Coordinate.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/es/ieslavereda/King.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/es/ieslavereda/pruebas/King.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/es/ieslavereda/Knight.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/es/ieslavereda/pruebas/Knight.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/es/ieslavereda/Main.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/es/ieslavereda/Pawn.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/es/ieslavereda/pruebas/Pawn.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/es/ieslavereda/Piece.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/es/ieslavereda/pruebas/Piece.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/es/ieslavereda/Queen.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/es/ieslavereda/pruebas/Queen.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/es/ieslavereda/Rook.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/es/ieslavereda/pruebas/Rook.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/es/ieslavereda/Tool.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/es/ieslavereda/pruebas/Tool.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/es/ieslavereda/pruebas/Bishop.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/es/ieslavereda/pruebas/Bishop.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/es/ieslavereda/pruebas/Board.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/es/ieslavereda/pruebas/Board.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/es/ieslavereda/pruebas/Coordinate.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/es/ieslavereda/pruebas/Coordinate.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/es/ieslavereda/pruebas/DeletedPieceManagerListImp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/es/ieslavereda/pruebas/DeletedPieceManagerListImp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/es/ieslavereda/pruebas/King.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/es/ieslavereda/pruebas/King.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/es/ieslavereda/pruebas/Knight.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/es/ieslavereda/pruebas/Knight.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/es/ieslavereda/pruebas/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/es/ieslavereda/pruebas/Game.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/es/ieslavereda/pruebas/Pawn.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/es/ieslavereda/pruebas/Pawn.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/es/ieslavereda/pruebas/Piece.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/es/ieslavereda/pruebas/Piece.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/es/ieslavereda/pruebas/Queen.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/es/ieslavereda/pruebas/Queen.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/es/ieslavereda/pruebas/Rook.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/es/ieslavereda/pruebas/Rook.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -80,11 +76,41 @@
       <workItem from="1707757730222" duration="1000" />
       <workItem from="1707843399149" duration="6000" />
       <workItem from="1708615889312" duration="2392000" />
-      <workItem from="1708966156510" duration="6439000" />
+      <workItem from="1708966156510" duration="6538000" />
+      <workItem from="1709053451755" duration="9411000" />
     </task>
+    <task id="LOCAL-00001" summary="v.1">
+      <option name="closed" value="true" />
+      <created>1708975286662</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1708975286663</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="v.1" />
+    <option name="LAST_COMMIT_MESSAGE" value="v.1" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/es/ieslavereda/pruebas/Pawn.java</url>
+          <line>75</line>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/es/ieslavereda/pruebas/Game.java</url>
+          <line>8</line>
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

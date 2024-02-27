@@ -52,6 +52,7 @@ public abstract class Piece {
     public void remove(){
         if(cell!=null)
             cell.setPiece(null);
+            cell.getBoard().getPiezasBorradas().addPiece(this);
         cell = null;
     }
 

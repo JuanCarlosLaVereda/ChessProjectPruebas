@@ -7,6 +7,9 @@ public class Pawn extends Piece {
     public Pawn(Board board, Coordinate position, Type type) {
         super(type.getType(), board.getCellAt(position));
     }
+    public Pawn(Pawn.Type type){
+        super(type.getType(), null);
+    }
 
     @Override
     public boolean moveTo(Coordinate coordinate) {
@@ -93,7 +96,7 @@ public class Pawn extends Piece {
             posicionesCandidatas.add(c);
 
         // Si esta en la posicion inicial se le permite avanzar 2 posiciones
-        if (position.getNumber() == 2) {
+        if (position.getNumber() == 7) {
             c = position.down();
             if (board.contains(c) && board.getCellAt(c).getPiece() == null) {
                 c = c.down();

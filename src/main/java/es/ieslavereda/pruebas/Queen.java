@@ -8,6 +8,11 @@ public class Queen extends Piece{
         super(type.getType(), board.getCellAt(position));
     }
 
+    public Queen(Type type){
+        super(type.getType(), null);
+    }
+
+
     //put your task here
     public Set<Coordinate> getNextMovements(){
         Set<Coordinate> nextMovements = new TreeSet<>();

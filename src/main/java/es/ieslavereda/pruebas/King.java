@@ -8,6 +8,10 @@ public class King extends Piece {
         super(type.getType(), board.getCellAt(position));
     }
 
+    public King(King.Type type){
+        super(type.getType(), null);
+    }
+
     public boolean check(){
         Board tablero = this.getCell().getBoard();
         Color colorRival = Color.WHITE;

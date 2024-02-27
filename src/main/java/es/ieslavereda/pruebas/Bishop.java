@@ -7,6 +7,9 @@ public class Bishop extends Piece {
     public Bishop(Board board, Coordinate position, Type type) {
         super(type.getType(), board.getCellAt(position));
     }
+    public Bishop(Bishop.Type type){
+        super(type.getType(), null);
+    }
 
     public Set<Coordinate> getNextMovements(){
         return getNextMovementsAsBishop(this);
