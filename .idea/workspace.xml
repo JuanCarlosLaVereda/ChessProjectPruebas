@@ -5,19 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="961f9787-bbe9-431f-8dd8-86a74f7abe99" name="Changes" comment="v.1">
-      <change afterPath="$PROJECT_DIR$/src/main/java/es/ieslavereda/pruebas/Screen.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/es/ieslavereda/pruebas/Input.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/es/ieslavereda/pruebas/MainGame.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/es/ieslavereda/pruebas/Player.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/es/ieslavereda/pruebas/Bishop.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/es/ieslavereda/pruebas/Bishop.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/es/ieslavereda/pruebas/Board.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/es/ieslavereda/pruebas/Board.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/es/ieslavereda/pruebas/Coordinate.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/es/ieslavereda/pruebas/Coordinate.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/es/ieslavereda/pruebas/DeletedPieceManagerListImp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/es/ieslavereda/pruebas/DeletedPieceManagerListImp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/es/ieslavereda/pruebas/King.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/es/ieslavereda/pruebas/King.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/es/ieslavereda/pruebas/Knight.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/es/ieslavereda/pruebas/Knight.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/es/ieslavereda/pruebas/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/es/ieslavereda/pruebas/Game.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/es/ieslavereda/pruebas/Pawn.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/es/ieslavereda/pruebas/Pawn.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/es/ieslavereda/pruebas/Piece.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/es/ieslavereda/pruebas/Piece.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/es/ieslavereda/pruebas/Queen.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/es/ieslavereda/pruebas/Queen.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/es/ieslavereda/pruebas/Rook.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/es/ieslavereda/pruebas/Rook.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/es/ieslavereda/pruebas/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/es/ieslavereda/pruebas/Game.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -78,6 +70,7 @@
       <workItem from="1708615889312" duration="2392000" />
       <workItem from="1708966156510" duration="6538000" />
       <workItem from="1709053451755" duration="9411000" />
+      <workItem from="1709139361764" duration="11771000" />
     </task>
     <task id="LOCAL-00001" summary="v.1">
       <option name="closed" value="true" />
@@ -105,10 +98,14 @@
           <line>75</line>
           <option name="timeStamp" value="4" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
+        <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/src/main/java/es/ieslavereda/pruebas/Game.java</url>
-          <line>8</line>
-          <option name="timeStamp" value="5" />
+          <line>89</line>
+          <properties class="es.ieslavereda.pruebas.Game" method="checkCoord">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="9" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
